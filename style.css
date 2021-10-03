@@ -11,17 +11,17 @@ body {
 }
 
 header {
+    position: relative;
+    z-index: 1;
     background-color: white;
     height: 50px;
     text-align: center;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.205);
-    margin-bottom: 5px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.205);
     line-height: 50px;
     /* border-radius: 0px 0px 5px 5px; */
 }
 
 header > h1 {
-    display: inline;
     font-size: 20px;
     margin: 0;
     color: rgb(70, 70, 70);
@@ -33,7 +33,7 @@ main {
     background-color: whitesmoke;
     margin: auto;
     width: 95%;
-    border-radius: 5px;
+    border-radius: 0px 0px 5px 5px;
     padding: 10px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.322);
 }
@@ -62,14 +62,13 @@ main {
 div#dados {
     text-align: center;
     padding: 5px;
-    height: 25px;
     line-height: 25px;
     width: fit-content;
     margin: 10px auto;
 }
 
 div#dados > p {
-    display: inline;
+    display:inline-table;
     color: rgb(109, 109, 109);
     font-weight: bold;
     font-size: 15px;
